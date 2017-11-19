@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name                  = 'anvil'
+  s.name                  = 'armature_anvil'
   s.version               = '0.0.1'
   s.date                  = '2017-11-19'
   s.summary               = 'Armature REST API Client'
