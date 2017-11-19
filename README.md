@@ -30,6 +30,8 @@ You will use an instance of Anvil::Client with your api code and environment (pr
 client = Anvil::Client.new('my_api_code', 'staging')
 ```
 
+And with the client instance you can create new vulnerabilities on Armature
+
 ```ruby
 client.vulnerabilities.create!([name: 'name', description: 'description'])
 ```
