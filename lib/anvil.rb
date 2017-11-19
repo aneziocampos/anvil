@@ -1,0 +1,1 @@
+class Anvil; end
