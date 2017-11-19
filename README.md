@@ -11,7 +11,7 @@ The Anvil can be installed using Rubygems or Bundler.
 ### Rubygems
 
 ```sh
-gem install anvil
+gem install armature_anvil
 ```
 
 ### Bundler
