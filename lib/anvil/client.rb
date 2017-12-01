@@ -1,6 +1,6 @@
 module Anvil
   class Client
-    require 'anvil/vulnerability'
+    # require 'anvil/vulnerability'
 
     attr_reader :api_key, :base_url
 
@@ -13,10 +13,15 @@ module Anvil
       Anvil::Vulnerability.new(self)
     end
 
+    def vulnerability_templates
+      Anvil::VulnerabilityTemplate.new(self)
+    end
     private
 
     def load_base_url_for(environment)
       case environment
+      when 'localhost'
+        @base_url = 'http://localhost:3000'
       when 'production'
         @base_url = 'https://app.conviso.com.br'
       when 'staging'

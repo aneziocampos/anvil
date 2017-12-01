@@ -35,3 +35,7 @@ And with the client instance you can create new vulnerabilities on Armature
 ```ruby
 client.vulnerabilities.create!([name: 'name', description: 'description'])
 ```
+
+```ruby
+client.vulnerability_templates.search('macos')
+```
