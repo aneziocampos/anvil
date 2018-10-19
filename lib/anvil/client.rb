@@ -1,7 +1,5 @@
 module Anvil
   class Client
-    # require 'anvil/vulnerability'
-
     attr_reader :api_key, :base_url
 
     def initialize(api_key, environment)
@@ -16,6 +14,7 @@ module Anvil
     def vulnerability_templates
       Anvil::VulnerabilityTemplate.new(self)
     end
+
     private
 
     def load_base_url_for(environment)
