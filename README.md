@@ -34,5 +34,6 @@ And with the client instance you can create new vulnerabilities on AppSec Flow
 
 ```ruby
 client.vulnerabilities.create!(client_impact: 'impact_here', project_id: 9999, vulnerability_model_id: 10,
-  failure_type: 'code_review', code_review_code: 'code', evidences: ['/myfile/image.png'])
+  failure_type: 'others', others_protocol: 'http', others_host: 'www.mytest.com', others_vector: 'my vector', others_steps: 'first step, second step', evidences: ['/myfile/image.png'])
 ```
+You can check the details on the accepted parameters here: [Vulnerability parameters details](https://github.com/aneziocampos/anvil/wiki/Vulnerability-Parameters)
