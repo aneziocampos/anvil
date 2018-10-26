@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license               = 'MIT'
   s.required_ruby_version = '2.4.2'
   s.bindir                = 'exe'
-  s.executables           = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  s.executables           = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths         = ['lib']
   s.add_development_dependency 'bundler', '~> 1.8'
   s.add_development_dependency 'rake', '~> 10.0'
