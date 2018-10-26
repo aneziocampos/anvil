@@ -2,7 +2,7 @@
 
 ## API version support
 
-This client supports Conviso Armature
+This client supports AppSec Flow
 
 ## Installation
 
@@ -11,14 +11,14 @@ The Anvil can be installed using Rubygems or Bundler.
 ### Rubygems
 
 ```sh
-gem install armature_anvil
+gem install appsec_flow_anvil
 ```
 
 ### Bundler
 
 Add it to your Gemfile
 
-    gem "armature_anvil"
+    gem "appsec_flow_anvil"
 
 and follow normal [Bundler](http://gembundler.com/) installation and execution procedures.
 
@@ -30,12 +30,9 @@ You will use an instance of Anvil::Client with your api code and environment (pr
 client = Anvil::Client.new('my_api_code', 'staging')
 ```
 
-And with the client instance you can create new vulnerabilities on Armature
+And with the client instance you can create new vulnerabilities on AppSec Flow
 
 ```ruby
-client.vulnerabilities.create!([name: 'name', description: 'description'])
-```
-
-```ruby
-client.vulnerability_templates.search('macos')
+client.vulnerabilities.create!(client_impact: 'impact_here', project_id: 9999, vulnerability_model_id: 10,
+  failure_type: 'code_review', code_review_code: 'code', evidences: ['/myfile/image.png'])
 ```
