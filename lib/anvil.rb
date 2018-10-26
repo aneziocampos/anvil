@@ -1,1 +1,1 @@
-class Anvil; end
+module Anvil; end
