@@ -3,19 +3,24 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name                  = 'appsec_flow_anvil'
-  s.version               = '0.0.2'
+  s.version               = '0.0.3'
   s.date                  = '2017-11-19'
   s.summary               = 'AppSec Flow REST API Client'
   s.description           = 'Ruby wrapper for the REST API for Conviso Armature'
   s.authors               = ['Anezio Campos']
   s.email                 = 'newdevas@gmail.com'
+<<<<<<< HEAD
   s.files                 = Dir["lib/**/*.rb", "ext/**/*.{c,h,rb}", "*.md", "BSDL", "LICENSE.txt"]
+=======
+  s.files                 = Dir.glob("{bin,lib}/**/*") + %w(LICENSE README.md ROADMAP.md CHANGELOG.md)
+>>>>>>> Changes on gemspec
   s.homepage              = 'http://app.conviso.com.br'
   s.license               = 'MIT'
-  s.required_ruby_version = '>= 2.4.2'
+  s.required_ruby_version = '>= 2'
   s.bindir                = 'exe'
-  s.executables           = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  s.executables           = ['bundle']
   s.require_paths         = ['lib']
+  s.rubyforge_project     = "bundler"
   s.add_development_dependency 'bundler', '~> 1.8'
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rspec'
