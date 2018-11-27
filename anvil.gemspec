@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name                  = 'appsec_flow_anvil'
-  s.version               = '0.0.5'
+  s.version               = '0.0.6'
   s.date                  = '2017-11-19'
   s.summary               = 'AppSec Flow REST API Client'
   s.description           = 'Ruby wrapper for the REST API for Conviso Armature'
