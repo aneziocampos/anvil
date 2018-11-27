@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.description           = 'Ruby wrapper for the REST API for Conviso Armature'
   s.authors               = ['Anezio Campos']
   s.email                 = 'newdevas@gmail.com'
-  s.files                 = Dir["lib/**/*.rb", "ext/**/*.{c,h,rb}", "*.md", "BSDL", "LICENSE.txt"]
+  s.files                 = Dir.glob("{spec,lib}/**/*") + %w(README.md)
   s.homepage              = 'http://app.conviso.com.br'
   s.license               = 'MIT'
   s.required_ruby_version = '>= 2'
