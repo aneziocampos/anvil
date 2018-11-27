@@ -13,10 +13,7 @@ Gem::Specification.new do |s|
   s.homepage              = 'http://app.conviso.com.br'
   s.license               = 'MIT'
   s.required_ruby_version = '>= 2'
-  s.bindir                = 'exe'
-  s.executables           = ['bundle']
   s.require_paths         = ['lib']
-  s.rubyforge_project     = "bundler"
   s.add_development_dependency 'bundler', '~> 1.8'
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rspec'
