@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name                  = 'appsec_flow_anvil'
-  s.version               = '0.0.6'
+  s.version               = '0.0.7'
   s.date                  = '2017-11-19'
   s.summary               = 'AppSec Flow REST API Client'
   s.description           = 'Ruby wrapper for the REST API for Conviso Armature'
@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bundler', '~> 1.8'
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rspec'
+  s.add_dependency('faraday', '~> 0.13.1')
 end
