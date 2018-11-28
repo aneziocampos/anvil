@@ -1,3 +1,3 @@
-require 'Anvil/Client'
-require 'Anvil/Vulnerability'
+require 'anvil/client'
+require 'anvil/vulnerability'
 require 'faraday'
